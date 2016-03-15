@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1"
+	    android:fillViewport="true"
+	     >
+	
+	    <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" 
+		    >
+		    
+		    <ImageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+				android:src="@drawable/schoolunch_bg"
+				android:adjustViewBounds="true"
+				android:scaleType="fitCenter"
+				android:id="@+id/login_image"
+				android:layout_alignParentTop="true"
+				android:maxHeight="800dp"
+				android:contentDescription="@string/image"
+				/>
+		    
+		    <TextView 
+		        android:layout_below="@+id/login_image"
+		        android:id="@+id/login_text"
+		        android:layout_width="match_parent"
+		        android:layout_height="48dp"
+		        android:text="@string/tv_tag"
+		        android:gravity="center"
+		        android:textSize="@dimen/text_size_20dp"
+		        android:textColor="#333333"
+		        
+		        />
+		    <LinearLayout
+		        android:id="@+id/linear"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:gravity="center"
+				android:layout_below="@+id/login_text"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				>
+			    <EditText
+			        android:id="@+id/edit_username"
+			        android:layout_width="match_parent"
+			        android:layout_height="48dp"
+			        android:inputType="text"
+			       	android:hint="@string/tv_username"
+			        />
+			    <EditText
+			        android:id="@+id/edit_password"
+			        android:layout_width="match_parent"
+			        android:layout_height="48dip"
+			        android:inputType="textPassword"
+			        android:hint="@string/tv_password"
+			        />
+			</LinearLayout>
+		</RelativeLayout>
+	</ScrollView>
+	
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        >
+        </View>
+    <LinearLayout 
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:id="@+id/login_button_bar"
+        >
+		<Button 
+		    android:id="@+id/btn_login"
+		    android:layout_width="match_parent"
+		    android:layout_height="48dp"
+		    android:paddingLeft="8dp"
+		    android:paddingRight="8dp"
+		    android:textSize="@dimen/text_size_15dp"
+		    android:text="@string/btn_login"
+	        style="?android:attr/borderlessButtonStyle"
+     	    android:layout_weight="1"
+		    />
+		
+			<View
+	        android:layout_width="1dp"
+	        android:layout_height="match_parent"
+	        android:background="?android:attr/listDivider"
+	        android:layout_marginTop="4dp"
+	        android:layout_marginBottom="4dp"
+	        >
+	        </View>
+		
+		<Button 
+		    android:id="@+id/btn_registe"
+		    android:layout_width="match_parent"
+		    android:layout_height="48dp"
+		    android:paddingLeft="8dp"
+		    android:paddingRight="8dp"
+		    android:textSize="@dimen/text_size_15dp"
+		    android:text="@string/btn_regis"
+	        style="?android:attr/borderlessButtonStyle"
+	        android:layout_weight="1"
+		    />
+	</LinearLayout>
+
+</LinearLayout>

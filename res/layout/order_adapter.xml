@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:descendantFocusability="blocksDescendants"
+    >
+    
+    <Button
+		    android:id="@+id/btn_cancel"
+            android:layout_width="60dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="#00ac00"
+            android:layout_marginRight="6dip"
+            android:text="@string/btn_cancel"
+            android:textSize="@dimen/text_size_15dp"
+            android:textColor="#ffffff"
+        />
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:id="@+id/order_layout"
+	    android:layout_toEndOf="@id/btn_cancel"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="6dip"
+	    >
+	    <TextView 
+	        android:id="@+id/tv_order_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="32dp"
+	        android:textSize="@dimen/text_size_20dp"
+	        android:text="@string/test_name"
+	        />
+	    <TextView 
+	        android:id="@+id/tv_order_shop"
+	        android:layout_width="wrap_content"
+	        android:layout_height="32dp"
+	        android:textSize="@dimen/text_size_15dp"
+	        android:text="@string/test_order_info"
+	        android:layout_below="@id/tv_order_name"
+	        />
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dip" 
+    android:background="#e0e2ee"
+    >
+    
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="35dip"
+	    android:textSize="@dimen/text_size_20dp"
+	    android:text="@string/test_produce_type"
+	    android:gravity="center|left"
+	    android:layout_marginLeft="40dip"
+	    android:id="@+id/tv_type_name"
+	    android:layout_centerVertical="true"
+	    />
+	 <TextView 
+        android:id="@+id/tv_type_count" 
+        android:layout_width="wrap_content" 
+        android:layout_height="?android:attr/listPreferredItemHeight" 
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@id/tv_type_name"
+        android:gravity="center_vertical" 
+        android:singleLine="true"
+        android:text="@string/test_produce_type_count"
+    	/> 
+</RelativeLayout>

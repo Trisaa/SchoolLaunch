@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/shop_order_layout"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="6dip"
+	    >
+	    <TextView 
+	        android:id="@+id/tv_shop_adapter_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/text_size_25dp"
+	        android:text="@string/test_name"
+	        android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        android:id="@+id/tv_shop_adapter_order"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/text_size_15dp"
+	        android:text="@string/test_shop_orders"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="30dip"
+	        android:layout_centerVertical="true"
+	        />
+	</RelativeLayout>
+	<TextView 
+	    android:id="@+id/tv_shop_adapter_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_15dp"
+        android:text="@string/test_shop_orders_count"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/shop_order_layout"
+	    />
+</RelativeLayout>
